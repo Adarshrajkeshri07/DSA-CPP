@@ -4,13 +4,16 @@ int main(){
     int n ; 
     cout << " enter the value of the n  : " ; 
     cin >> n ; 
+    int  k = 1 ;
   for(int i = 0  ; i < n ; i++) {
     for(int j = 0 ; j < i ; j++){
         cout << " " ; 
     }
     for(int j = 0 ; j < n - i ; j++){
-        cout << i + 1 ;
+        cout << k  ;
+     
     }
+    k = k + 1;
     cout << endl ;
 
   }
