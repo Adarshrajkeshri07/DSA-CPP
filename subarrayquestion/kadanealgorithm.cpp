@@ -3,8 +3,8 @@
 using namespace std ; 
 int main(){
     int a[5] = {-1,-2,-6,-9,-8};
-    int maxsum = INT_MIN ;
-    int sum = 0;
+    int maxsum = INT_MIN ; 
+     int sum = 0 ; 
     for(int i = 0 ; i < 5 ; i++){
        
          sum+=a[i];
