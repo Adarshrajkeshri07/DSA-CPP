@@ -1,5 +1,6 @@
 #include<iostream>
 #include<climits>
+#include<algorithm>
 using namespace std ; 
 int maxwater(int a[] , int size){
     int st = 0  , end = size - 1 ; 
@@ -9,13 +10,11 @@ int maxwater(int a[] , int size){
     int width = end - st ; 
     int area = height*width ;
     maxi = max(area , maxi) ; 
-    if(a[st]<a[end]){
-        st++;
-    }else
-    end--;
-    }
-   return maxi ; 
+  a[st]<a[end] ? st++ : end-- ;
+  
 }
+return maxi; }
+
 int main(){
     int a[9] = {1,8,2,5,7,9,8,7,2} ; 
     int size = 9 ; 
