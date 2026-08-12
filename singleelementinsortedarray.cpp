@@ -74,6 +74,6 @@ int main(){
             }
         }
       }
-      cout << "invalid" ; 
+      cout << "invalid"; 
       return 0 ; 
     }
