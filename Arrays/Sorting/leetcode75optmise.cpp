@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std ; 
+int main(){
+  int   a[10] = {1,2,1,0,0,1,0,1,0,2} ;
+  int n = 10 ; 
+  int one = 0 , two = 0 , zero = 0 ; 
+  for(int i = 0 ; i < n ; i++){
+    if(a[i]==0){
+        zero++;
+    }else 
+    if(a[i]==1){
+        one++;
+    }else {
+        two++;
+    }
+  }
+  int index = 0 ; 
+  for(int i = 0 ; i < zero ; i++){
+    a[index++] = 0 ;
+  }
+  for (int i = 0; i < one; i++)
+  {
+      a[index++] = 1;
+  }
+  for (int i = 0; i < two; i++)
+  {
+      a[index++] = 2;
+  }
+  for(int i = 0 ; i < n ; i++){
+    cout << a[i] ; 
+  }
+}
