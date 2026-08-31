@@ -49,7 +49,7 @@ int main(){
       }
       while(st <= end){
         int mid = st + (end-st)/2 ;
-        if(a[st]=!a[st+1]){
+        if(a[st] != a[st+1]){
             cout <<a[st];
             return 0 ;
         }else if(a[end]!=a[end-1]){
