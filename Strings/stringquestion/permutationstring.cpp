@@ -28,8 +28,6 @@ int main(){
         }
         if(isfreqsame(freq ,winfreq)){
             return true ;
-        }else {
-            return false ; 
         }
-    }
+    }return false ; 
 }
