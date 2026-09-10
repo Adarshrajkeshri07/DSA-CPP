@@ -22,7 +22,7 @@ int main()
         {4, 5, 6},
         {7, 8, 9}};
 
-  int ans = columnsum(a,3,3) ; 
-  cout << ans ; 
-    return 0;
+        int ans = columnsum(a,3,3) ; 
+        cout << ans ; 
+        return 0;
 }
