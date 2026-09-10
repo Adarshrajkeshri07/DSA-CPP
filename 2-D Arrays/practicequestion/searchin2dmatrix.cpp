@@ -56,6 +56,8 @@ int main()
             if (binarySearch(matrix[middleRow], target, numberOfColumns))
             {
                 cout << "valid target";
+            }else {
+                cout << "invalid target" ; 
             }
 
             return 0 ; 
@@ -69,7 +71,7 @@ int main()
             endRow = middleRow - 1;
         }
     }
-    cout << " invalid target" ;
+   
 
     return 0;
 }
