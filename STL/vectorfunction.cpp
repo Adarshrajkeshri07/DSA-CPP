@@ -13,7 +13,7 @@
 
  // * vec.size();
  // * vec.capacity();
- // * vec.push_back(); == vec.emplace_back ;
+ // * vec.push_back(); == vec.emplace_back() ;
  // * vec.pop_back();
  // vec.emplace_back;
  //vec[index] == vec.at(index) ; 
