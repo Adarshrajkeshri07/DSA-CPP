@@ -12,15 +12,11 @@ int main(){
         prefix[i] = prefix[i-1] + a[i] ; 
     }
     unordered_map<int , int> m ; 
+    m[0] = 1 ; 
     for(int j = 0 ; j < n ; j++){
-        int val = prefix[j] - target  ; 
-        if(prefix[j] == target)vote++ ; 
+        int val = prefix[j] - target  ;  
         if(m.find(val) != m.end()) vote += m[val] ; 
-        if(m.find(prefix[j]) == m.end()){
-            m[prefix[j]] = 0 ; 
-        }
         m[prefix[j]]++ ; 
-  
     }
     cout << vote ; 
     return 0 ; 
